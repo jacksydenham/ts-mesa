@@ -60,7 +60,9 @@ describe('${rawName}', () => {
 
 // 4. Write files
 fs.writeFileSync(path.join(targetDir, 'solution.ts'), solutionTemplate);
-fs.writeFileSync(path.join(targetDir, 'solution.test.ts'), testTemplate);
+fs.writeFileSync(path.join(targetDir, 'solution.test.ts'), 
+// testTemplate)
+);
 
 // Write markdown containing title and the direct URL reference... Would be nice to webscrape the problem but for my own sake I don't need it.
 const readmeContent = `# Problem Link: [${rawNumber}. ${rawName}](${rawUrl})\n`;
