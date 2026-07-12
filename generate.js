@@ -36,7 +36,7 @@ const rawName = kebabName
 
 // Directory name layout: "200-number-of-islands"
 const dirName = `${problemNumber}-${kebabName}`;
-const targetDir = path.join(__dirname, 'src', dirName);
+const targetDir = path.join(__dirname, 'src/problems', dirName);
 
 if (fs.existsSync(targetDir)) {
   console.error(`Error: Folder "${dirName}" already exists.`);
